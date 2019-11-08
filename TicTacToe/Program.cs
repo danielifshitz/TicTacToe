@@ -13,11 +13,12 @@ namespace TicTacToe
             Console.WriteLine("please enter board size");
             string choose = Console.ReadLine();
             int result;
-            while (! int.TryParse(choose, out result))
+            while (!int.TryParse(choose, out result))
             {
                 Console.WriteLine("please enter board size");
                 choose = Console.ReadLine();
             }
+
             Game board = new Game(result);
             while (true)
             {
